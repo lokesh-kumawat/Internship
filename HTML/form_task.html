@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    
+</head>
+<body>
+    <h2 style="text-align: center;"> Examination Form </h2>
+    <form action="#">
+        <fieldset>
+            <legend>Student Details</legend><br>
+
+            <!-- username -->
+            <label for="username">Enter Name </label>
+            <input type="text" placeholder="Enter Name" name="username" required autocomplete="off"><br><br>
+
+            <!-- fathers Name -->
+            <label for="fathersname">Father's Name</label>
+            <input type="text" placeholder="Father &apos;s name" id="Fname" autocomplete="off"><br><br>
+
+            <!-- mother's name -->
+             <label for="mother'name">Mother's Name</label>
+             <input type="text" placeholder="Mother &apos;s Name" name="Mname" autocomplete="off"><br><br>
+
+            <!-- email -->
+            <label for="email">Enter Email</label>
+            <input type="email" placeholder="Enter Email" name="email" required autocomplete="off"><br><br>
+
+            <!-- mob. number -->
+            <label for="number">Mob. number</label>
+            <input type="number" placeholder="mob. number" name="number" autocomplete="off"><br><br>
+
+            <!-- for birth date -->
+            <label for="birth_date">Birth-date</label>
+            <input type="date" name="birth_date"><br><br>
+
+             <!-- address -->
+            <label for="Address">Address :- </label><br>
+            <textarea name="Address" placeholder="Write your Address here" id="useradd." cols="20" rows="4"></textarea><br><br>
+
+            <!-- Gender -->
+            <label for="gender">Select your gender :- </label><br>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="femail">Female
+            <input type="radio" name="gender" value="other">Other
+            <br><br>
+
+            <!-- country -->
+            <label for="country">Choose your country :- </label>
+            <select name="country" id="">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="UK">UK</option>
+                <option value="Pakistan">Pakistan</option>
+            </select> <br><br>
+
+            <!-- choose subject -->
+            <label for="subject">Select your subject :- </label><br>
+            <input type="checkbox" name="subject" id="english">English
+            <input type="checkbox" name="subject" id="hindi">Hindi
+            <input type="checkbox" name="subject" id="math">math
+            <input type="checkbox" name="subject" id="Physics">Physics
+            <input type="checkbox" name="subject" id="Chemistry">Chemistry
+            <br><br>
+
+            <!-- submit button -->
+            <input type="submit" value="submit" id="resetbtn">
+
+            <!-- reset button -->
+             <input type="reset" value="reset" id="resetbtn">
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
