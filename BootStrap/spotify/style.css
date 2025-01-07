@@ -1,0 +1,41 @@
+
+.full-input{
+    width: 25rem;
+}
+
+#form-input{
+    border: none;
+    outline: none;
+}
+
+#left{
+background-color: rgba(33, 37, 41, 0.5);
+}
+
+.spotify-card{
+    height: 12.5rem;
+}
+
+.spotify-card .card{
+background-color: rgba(53, 53, 53, 0.3);
+}
+section{
+    height: 36rem;
+}
+
+#right{
+    background-color: rgba(33, 37, 41, 0.5);
+}
+
+ .row .img-card:hover{
+    background-color: rgba(128, 128, 128, 0.1);
+    border-radius: 0.3rem;
+}
+
+.footer-link{
+   display: flex;
+   text-decoration: none;
+   color: gray;
+   font-size: 1em;
+}
+
