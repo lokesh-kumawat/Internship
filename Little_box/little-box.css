@@ -1,0 +1,105 @@
+#navbar-clr {
+    background-color: rgb(247, 241, 240);
+}
+
+.big-nav {
+    background-color: rgb(49, 49, 50);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.circle-img {
+    border-radius: 66%;
+}
+
+
+.top-rounded-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* big screen navbar-overflow media */
+@media (min-width: 300px) {
+    #big-screen-navbar {
+        overflow-x: auto;
+        scrollbar-width: none;
+        white-space: nowrap;
+    }
+}
+
+/* small screen rounded container property */
+@media only screen and (min-width:250px) {
+    #rounded-container {
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+
+    #rounded-row {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+}
+
+
+/* small screen rounded container property */
+@media only screen and (min-width:700px) {
+    #rounded-container {
+        display: none;
+    }
+
+    #carouselExampleAutoplaying {
+        padding-top: 0.1rem;
+    }
+
+}
+
+/* rounded container big size screen small container */
+@media only screen and (min-width:390px) and (max-width:700px)  {
+    .top-rounded-column{
+        width: 15%;
+    }
+}
+
+.buy-button {
+    background-color: rgb(33, 43, 54);
+    color: white;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.bottom-carousel {
+    background-color: rgb(241, 239, 241);
+}
+
+.carousel-inner-bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-part {
+    background-color: rgb(49, 49, 50);
+}
+
+.footer-head {
+    color: rgb(253, 175, 62);
+}
+
+li {
+    color: white;
+    text-decoration: none;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.footer-icon {
+    padding: 6px;
+}
