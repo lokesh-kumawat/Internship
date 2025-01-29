@@ -1,2 +1,0 @@
-# inter
-Html, CSS, Bootstrap
