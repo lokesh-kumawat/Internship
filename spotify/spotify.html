@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+        
+    <link rel="stylesheet" href="./spotify.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="Main">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid align-items-end">
+                <!-- Brand Logo -->
+                <a href="#" class="navbar-brand p-0">
+                    <i class="bi bi-spotify text-white fs-4"></i>
+                </a>
+
+                <!-- Toggler Button for Collapse -->
+                <button class="navbar-toggler text-bg-secondary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible Content -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+                    <div class="d-flex w-100 gap-2 align-items-center home-search-btn">
+
+                        <!-- Home Button -->
+                        <div class="home-nav ">
+                            <button class="rounded-circle btn border-0 text-center home-btn me-3">
+                                <i class="bi bi-house-door fs-5 "></i>
+                            </button>
+
+                            <!-- Search Bar -->
+                            <div class="d-inline-block rounded-pill search-bar">
+                                <div class="d-inline-block p-2 ">
+                                    <div class="d-flex flex-row">
+                                        <span class="text-dark bg-transparent" id="basic-addon1">
+                                            <i class="bi bi-search " style="color: gray;"></i>
+                                        </span>
+                                        <input type="text" id="form-input" class=" border-0 ms-2"
+                                            placeholder="Search Song here.." aria-label="search"
+                                            aria-describedby="basic-addon1">
+                                        <div class="vr"></div>
+                                        <i class="bi bi-calendar-x-fill text-center ms-3 me-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Login and Sign Up Buttons -->
+                        <div class="btn-nav ">
+                            <a href="#" class="btn text-secondary fw-bold">Login</a>
+                            <a href="#" class="btn rounded-pill bg-white text-dark fw-bold">Sign up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Main Content -->
+        <div class="container-fluid mt-1">
+            <div class="row">
+                <!-- Left Section -->
+                <section class="col-lg-3 col-md-4 col-sm-12 overflow-y-auto" style="scrollbar-width: none;" id="left">
+                    <div class="d-flex align-items-center">
+                        <svg class="mt-3 mb-4" data-encore-id="icon" role="img" aria-hidden="true" height="30"
+                            width="30" viewBox="0 0 24 24">
+                            <path
+                                d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"
+                                fill="gray"></path>
+                        </svg>
+                        <p class="d-inline-block text-secondary fs-6 mt-4 ms-1 fw-semibold">Your Library</p>
+                        <i class="text-secondary fw-bold bi bi-plus-lg ps-5 fs-5 mt-3 ms-auto"></i>
+                    </div>
+
+                    <!-- <div class="overflow-y-auto spotify-card mt-5" style="scrollbar-width: none;"> -->
+                    <div class="spotify-card">
+                        <div class="card text-white mb-2">
+                            <div class="card-body">
+                                <h5 class="card-title ">Create your first playlist</h5>
+                                <p class="card-text">It's easy, well help you</p>
+                                <a href="#" class="btn bg-white rounded-pill text-dark fw-bold "> Create playlist</a>
+                            </div>
+                        </div>
+
+                        <div class=" card text-white">
+                            <div class="card-body">
+                                <h5 class="card-title">let's find some podcasts to follow </h5>
+                                <p class="card-text">We'll keep you update on new episodes</p>
+                                <a href="#" class="btn bg-white rounded-pill text-dark fw-bold"> Browse podcasts </a>
+                            </div>
+                        </div>
+
+                        <footer class="mt-3">
+                            <div class="d-flex flex-wrap gap-3">
+                                <a href="#" class="text-secondary text-decoration-none">Legal</a>
+                                <a href="#" class="text-secondary text-decoration-none">Safety & Privacy Center</a>
+                                <a href="#" class="text-secondary text-decoration-none">Privacy Policy</a>
+                                <a href="#" class="text-secondary text-decoration-none">Cookies</a>
+                            </div>
+                            <a href="#" class="btn rounded-pill text-white fw-semibold border-white mt-3">
+                                <i class="bi bi-globe"></i> English
+                            </a>
+                        </footer>
+                    </div>
+                </section>
+
+                <!-- Right Section -->
+                <section class="col-lg-9 col-md-8 col-sm-12 overflow-y-auto right-card " style="scrollbar-width: none"
+                    id="right">
+                    <p class="fw-bold fs-4 text-white pt-4 pb-2"> Popular Artists </p>
+                    <div class="container">
+                        <div class="row row-cols-3">
+                            <!--  artist cards  -->
+                            <div class="col-md-3 mb-4 d-flex flex-column img-card">
+                                <img class="rounded-circle img-fluid mb-2" src="./spotiy-images/Ar. Rahman.jpg"
+                                    alt="Pritam...">
+                                <i class="bi bi-play-fill g-btn"></i>
+                                <div class="">
+                                    <p class="text-white fw-semibold">Pritam</p>
+                                    <p class="text-secondary">Artist</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mb-4 d-flex flex-column img-card">
+                                <img class="rounded-circle img-fluid" src="spotiy-images/Pritam.jpg " alt="Pritam...">
+                                <i class="bi bi-play-fill g-btn"></i>
+                                <div>
+                                    <p class="text-white fw-semibold">Pritam</p>
+                                    <p class="text-secondary">Artist
+                                    <p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mb-4 d-flex flex-column img-card">
+                                <img class="rounded-circle img-fluid" src="spotiy-images/Ar. Rahman.jpg "
+                                    alt="ar rahman">
+                                <i class="bi bi-play-fill g-btn"></i>
+                                <div>
+                                    <p class="text-white fw-semibold">A.R Rahman</p>
+                                    <p class="text-secondary">Artist
+                                    <p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mb-4 d-flex flex-column img-card">
+                                <img class="rounded-circle img-fluid" src="spotiy-images/Pritam.jpg " alt="Pritam...">
+                                <i class="bi bi-play-fill g-btn"></i>
+                                <div>
+                                    <p class="text-white fw-semibold">Pritam</p>
+                                    <p class="text-secondary">Artist
+                                    <p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mb-4 d-flex flex-column img-card">
+                                <img class="rounded-circle img-fluid" src="spotiy-images/honey sing.jpg"
+                                    alt="ar rahman">
+                                <i class="bi bi-play-fill g-btn"></i>
+                                <div>
+                                    <p class="text-white fw-semibold">Honey Sing</p>
+                                    <p class="text-secondary">Artist
+                                    <p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mb-4 d-flex flex-column img-card">
+                                <img class="rounded-circle img-fluid" src="spotiy-images/Pritam.jpg " alt="Pritam...">
+                                <i class="bi bi-play-fill g-btn"></i>
+                                <div>
+                                    <p class="text-white fw-semibold">Pritam</p>
+                                    <p class="text-secondary">Artist
+                                    <p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mb-4 d-flex flex-column img-card">
+                                <img class="rounded-circle img-fluid " src="spotiy-images/Ar. Rahman.jpg "
+                                    alt="ar rahman">
+                                <i class="bi bi-play-fill g-btn"></i>
+                                <div>
+                                    <p class="text-white fw-semibold">A.R Rahman</p>
+                                    <p class="text-secondary">Artist
+                                    <p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mb-4 d-flex flex-column img-card">
+                                <img class="rounded-circle img-fluid" src="spotiy-images/Pritam.jpg " alt="Pritam...">
+                                <i class="bi bi-play-fill g-btn"></i>
+                                <div>
+                                    <p class="text-white fw-semibold">Pritam</p>
+                                    <p class="text-secondary">Artist
+                                    <p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mb-4 d-flex flex-column img-card">
+                                <img class="rounded-circle img-fluid" src="spotiy-images/Ar. Rahman.jpg "
+                                    alt="ar rahman">
+                                <i class="bi bi-play-fill g-btn"></i>
+                                <div>
+                                    <p class="text-white fw-semibold">A.R Rahman</p>
+                                    <p class="text-secondary">Artist
+                                    <p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mb-4 d-flex flex-column img-card">
+                                <img class="rounded-circle img-fluid" src="spotiy-images/Pritam.jpg " alt="Pritam...">
+                                <i class="bi bi-play-fill g-btn"></i>
+                                <div>
+                                    <p class="text-white fw-semibold">Pritam</p>
+                                    <p class="text-secondary">Artist
+                                    <p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mb-4 d-flex flex-column img-card">
+                                <img class="rounded-circle img-fluid" src="spotiy-images/honey sing.jpg"
+                                    alt="ar rahman">
+                                <i class="bi bi-play-fill g-btn"></i>
+                                <div>
+                                    <p class="text-white fw-semibold">Honey Sing</p>
+                                    <p class="text-secondary">Artist
+                                    <p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mb-4 d-flex flex-column img-card">
+                                <img class="rounded-circle img-fluid" src="spotiy-images/Pritam.jpg " alt="Pritam...">
+                                <i class="bi bi-play-fill g-btn"></i>
+                                <div>
+                                    <p class="text-white fw-semibold">Pritam</p>
+                                    <p class="text-secondary">Artist
+                                    <p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <footer class=" row d-flex flex-wrap mb-3">
+                            <!-- Footer Sections -->
+                            <div class="col-6 col-lg-3">
+                                <p class="fw-semibold fs-5 text-white">Company</p>
+                                <a href="#" class="footer-link">About</a>
+                                <a href="#" class="footer-link">Jobs</a>
+                                <a href="#" class="footer-link">For the Record</a>
+                            </div>
+
+                            <!-- Communities -->
+                            <div class="col-6 col-lg-3">
+                                <p class="fw-semibold fs-5 text-white">Communities</p>
+                                <a href="#" class="footer-link">For Artists</a>
+                                <a href="#" class="footer-link">Developers</a>
+                                <a href="#" class="footer-link">Advertising</a>
+                                <a href="#" class="footer-link">Investors</a>
+                                <a href="#" class="footer-link">Vendors</a>
+                            </div>
+
+                            <!--useful links  -->
+                            <div class="col-6 col-lg-3">
+                                <p class="fw-semibold fs-5 text-white">Useful links</p>
+                                <a href="#" class="footer-link">Support</a>
+                                <a href="#" class="footer-link">Free Mobile App</a>
+                            </div>
+
+                            <!--spotify plans  -->
+                            <div class="col-6 col-lg-3">
+                                <p class="fw-semibold col-sm-12 fs-5 text-white">Spotify Plans</p>
+                                <a href="#" class="footer-link">Premium Individual </a>
+                                <a href="#" class="footer-link">Premium Duo </a>
+                                <a href="#" class="footer-link">Premium Family </a>
+                                <a href="#" class="footer-link">Premium Student</a>
+                                <a href="#" class="footer-link">Spotify Free</a>
+                            </div>
+
+                            <!-- copy right -->
+                            <hr>
+                            <div class="d-inline-block fs-5 ">
+                                <p class="text-secondary"> &copy; 2025 Spotify AB </p>
+                            </div>
+                    </div>
+
+                    </footer>
+                </section>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
