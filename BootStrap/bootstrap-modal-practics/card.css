@@ -1,0 +1,32 @@
+
+/* first card css */
+.bg-404040{
+    background-color: #404040;
+}
+
+a.bg-404040:hover {
+    background-color: #404040; 
+}
+
+.bg-d6381a{
+    background-color: #d6381a;
+}
+
+a.bg-d6381a:hover{
+    background-color: #d6381a;
+}
+
+.card-line{
+    max-height: 225px;
+    padding-top: 15px;
+    background-color: #ffc0c04a;
+}
+
+
+/* third card */
+
+iframe{
+    height: 60vh;
+}
+
+
