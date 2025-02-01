@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2>java script</h2>
+
+<script>
+
+
+
+console.log('hello world!');
+
+// function call
+
+// function fullname(){
+//     return this.firstName + " " + this.lastName;
+// }
+
+// const name1 = {
+//     firstName: 'jay',
+//     lastName : 'sain'
+// };
+
+// const name2 = {
+//     firstName: 'shubh',
+//     lastName: 'goyal'
+// };
+// console.log(fullname.call(name1));
+// console.log(fullname.call(name2));
+
+
+
+// use arguments in call() method
+
+// const detail = function (from) {
+//     console.log(this.firstName + " " + this.lastName + ' from-' + from)
+// }
+
+// const name1 = {
+//     firstName: 'soriya',
+//     lastName: 'abc'
+// };
+
+// const name2 = {
+//     firstName: 'honey',
+//     lastName: 'sing'
+// };
+
+// detail.call(name1, "jaipur");
+// detail.call(name2 , 'delhi');
+
+
+// apply () method 
+// function fullname(from, sector) {
+//     return this.firstname + " " + this.lastname + ' form ' + from + " " + sector;
+// }
+
+
+// const name3 = {
+//     firstname: 'soriya',
+//     lastname: 'abc'
+// };
+
+// const name4 = {
+//     firstname: 'honey',
+//     lastname: 'sing'
+// };
+
+
+// console.log(fullname.apply(name3, ["jaipur", "12"]));
+
+
+// const detail = {
+//     name: 'abcd',
+//     age: 23,
+//     user: function () {
+//         console.log(this.name + " age " + this.age)
+//     }
+// }
+
+// const second = {
+//     name: 'bcde',
+//     age: 45
+// }
+
+// detail.user.call(detail);
+// detail.user.call(second);
+// detail.user()
+
+
+// bind function
+// let res = detail.user.bind(second);
+// console.log(res)
+// res()
+
+
+
+// function fullname(state, country) {
+//     console.log(this.firstname + " " + this.lastname + " " + state + " " + country);
+// }
+
+// const firstuser = {
+//     firstname: 'heyy',
+//     lastname: 'byy'
+// };
+
+// const seconduser = {
+//     firstname: 'hii',
+//     lastname: 'go'
+// }
+
+// fullname.call(firstuser, "jaipur", "india");
+// fullname.apply(seconduser, ['abc', 'USA']);
+// let result = fullname.bind(firstuser, 'jss', 'china');
+// console.log(result)
+// result()
+
+
+
+
+// function num ( p1 , p2){
+//     console.log(`The sum of ${this.value1} and ${this.value2} is = ${this.value1 + this.value2}`)
+//     console.log(`The multiplication of ${p1} and ${p2} is = ${p1 + p2}`)
+// }
+
+// const first ={
+//     value1: 20,
+//     value2 : 30
+// };
+
+// const second ={
+//     value1: 3,
+//     value2: 4
+// };
+
+// const third ={
+//     value1:6,
+//     value2:6
+// };
+
+// num.call(first, 30,40);
+// num.apply(second, [5.4, 3]);
+
+// let result = num.bind(third, 9 , 9);
+// console.log(result);
+// result();
+
+
+// closures
+
+function outer() {
+    let val = 100;
+    return function inner() {
+        val -= 1;
+        console.log(val)
+    }
+    // inner();
+}
+
+const result = outer();
+result()
+
+// function fullname(){
+//     let first = 'kjld';
+//     let last = 'oieur';
+//     return function fname(){
+//         console.log(first + last)
+//     }
+// }
+
+// const nn = fullname();
+// nn()
+
+
+
+
+</script>
+
+</body>
+</html>

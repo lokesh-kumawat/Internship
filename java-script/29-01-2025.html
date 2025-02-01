@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h3> java script </h3>
+<p id="output"></p>
+
+<script>
+
+
+console.log("hello world!")
+
+// function parameters and function arguments 
+//   function mul (a,b){ 
+//      console.log(a*b);
+//   }
+//   mul(2,3);
+
+
+// function merge(){
+//     let final = "";
+//     for(let a = 0; a < arguments.length; a++){
+//         final = final + arguments[a];
+//     }
+//     return final;
+// }
+
+// let ans = merge('hii', 'i', 'am', 'jhon');
+// console.log(ans);
+
+// passing arguments by Reference an obj
+
+// function updatePerson(person) {
+//     person.name = 'alice';
+//     person.age = 23;
+// }
+
+// let person = {
+//     name: 'bio',
+//     age: 45,
+// };
+
+// console.log('before update: ', person)
+// updatePerson(person);
+// console.log('after update: ', person)
+
+
+// passing arguments by reference an Array
+// function result (num){
+//    num[0] = 90;
+//    num[1] = 94;
+//    num.push(80);
+// }
+
+// let num = [23,44,56,78];
+
+// console.log('before update value: ', num);
+// result(num);
+// console.log('after update vale: ', num);
+
+
+// Example
+// function checkAge (age){
+//  if(age >= 18){
+//     console.log('accessed');
+//  }else{
+//     console.log('not accessed');
+//  }
+// }
+
+// let age = prompt('how old are you: ', 18)
+
+// if(checkAge(age)){
+//     alert('accessed granted');
+// }else{
+//     alert('access denied');
+// }
+
+// function min(a, b) {
+//     if (a < b) {
+//         console.log('a is small then b')
+//     } else {
+//         console.log('b is bigger then a')
+//     }
+// }
+
+// min(4,3)
+
+
+// function pow(x,n){
+//     return  x ** n
+// }
+
+// console.log( pow(3,3));
+
+// let age = prompt('what is your age?', 18);
+
+// if(age >= 18){
+//     function welcome(){
+//         alert('accessed');
+//     }
+// }else{
+//     function welcome(){
+//         alert('access denied');
+//     }
+// }
+
+// welcome()
+
+
+// function hostion
+
+// msg('top');
+
+// function msg(val){
+//     console.log(val);
+// }
+
+// msg('bottom');
+
+
+// sum(2,4)
+
+// function sum(a,b){
+//     let res = a+b;
+//     console.log(res)
+// } 
+ 
+
+// IIFE 
+// (function count(){
+// for(let i = 0; i<=5; i++){
+//     console.log(i)
+// }  
+// })();
+
+
+// arrow function
+// const add = (a,b) =>{
+//     return a+b;
+// }
+
+// console.log(add(3,4))
+
+// two parameter
+const add2 = (a,b) => a+b;
+console.log(add2(2,3))
+
+// one paremeters
+// const mul = (a) => a*a;
+// console.log(mul(30));
+
+// without parameters
+// const fn = () =>{
+//     console.log('hello guzz...');
+// }
+// fn();
+
+
+// let isMul = false;
+// const fun = isMul ? () =>{
+//    let res = 5*5;
+//    console.log(`multiple of 5 is : ${res}`);
+// } : () =>{
+//     let res2 = 5+5;
+//     console.log(`addition of 5 + 5 is : ${res2}`);
+// }
+
+// fun();
+
+const numbers = [1,2,3];
+const double = numbers.map(n => n*2);
+console.log(double);
+console.log(numbers)
+
+
+const fn = (question, yes, no) =>{
+  if (confirm(question)){
+    yes()
+  }else{
+    no()
+  }
+}
+
+fn(
+    'do you agree',
+    () => alert('you agreed'),
+    ()=> alert('you canceled')
+)
+
+
+
+
+</script>
+</body>
+</html>
