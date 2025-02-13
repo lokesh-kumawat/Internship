@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Java Script </title>
+</head>
+
+<body>
+
+    <h2>Java script</h2>
+    <p id="output"> </p>
+
+    <script>
+        console.log('hello world !');
+
+        // prototype
+        // function Person(name, job, yearOfBirth) {
+        //     this.name = name;
+        //     this.job = job;
+        //     this.yearOfBirth = yearOfBirth;
+        // }
+
+        // person.prototype.calculateAge = function (){
+        //     console.log('the current age is: ' +(2025 - this.yearOfBirth))
+        // };
+
+        // // console.log(person.prototype);
+        // const firstPerson = new person('lokesh', 'AI', 2004);
+        // console.log(firstPerson);
+        // firstPerson.calculateAge();
+
+        // Person.prototype.sayHi = function () {
+        //     alert(`Hello, My name is ${this.name}..`);
+        // }
+
+        // let firstPerson = new Person('lokesh', 'AI', 2020);
+        // console.log(firstPerson);
+        // firstPerson.sayHi();
+
+        // let secondPerson = new Person('honey', 'singer', 1990);
+        // secondPerson.sayHi();
+
+
+        // let output = document.getElementById("output");
+        // function shoppingCart() {
+        //     const cartItems = [];
+        //     function add(item) {
+        //         cartItems.push(item);
+        //         output.innerHTML += `${item.name} added to the cart. <br>`;
+        //     }
+        //     function remove(itemName) {
+        //         const index = cartItems.findIndex(item => item.name === itemName);
+        //         if (index !== -1) {
+        //             const removedItem = cartItems.splice(index, 1)[0];
+        //             output.innerHTML += `${removedItem.name} removed from the cart. <br>`;
+        //         } else {
+        //             output.innerHTML += `Item ${itemName} not found in the cart. <br>`;
+        //         }
+        //     }
+        //     return {
+        //         add,
+        //         remove,
+        //     };
+        // }
+
+        // // Defining items
+        // const item1 = { name: 'Car', price: 1000000 };
+        // const item2 = { name: 'Bike', price: 100000 };
+        // // Create a new Shopping cart
+        // const cart = shoppingCart();
+        // // Adding items to the cart
+        // cart.add(item1);
+        // cart.add(item2);
+        // // Remove bike from the cart
+        // cart.remove('Bike');
+
+
+        // inheritance
+
+        // class railwayForm {
+        //     constructor(name, trainNo) {
+        //         this.name = name;
+        //         this.trainNo = trainNo;
+        //     }
+
+        //     submit() {
+        //         console.log(`${this.name} your form is sumbitted with train No. ${this.trainNo} `);
+        //     }
+
+        //     cancle() {
+        //         console.log(`${this.name} your form is cancled and train No. ${this.trainNo}`);
+        //     }
+
+        // fill(name) {
+        //     console.log(`${this.name = name} form is fill`)
+        // }
+        // }
+
+        // let lokeshForm = new railwayForm('lokesh', 2379);
+        // lokeshForm.fill('lokesh');
+        // let harryForm = new railwayForm('harry',95876);
+        // harryForm.fill('harry');
+
+        // lokeshForm.submit();
+        // harryForm.cancle();
+
+
+        // inheritance
+        // class Animal {
+        //     constructor(name) {
+        //         this.name = name
+        //     }
+
+        //     run() {
+        //         console.log(`${this.name} is Running`);
+        //     }
+
+        //     shout() {
+        //         console.log(`${this.name} is Shouting`);
+        //     }
+
+        // }
+
+        // class monkey extends Animal {
+        //     eat() {
+        //         console.log(`${this.name} is eating Banana`);
+        //     }
+        // }
+
+
+        // let mon = new monkey('bruno')
+        // mon.run();
+        // mon.shout();
+        // mon.eat()
+
+
+        // class Employee{
+        //  constructor (name, leves){
+        //     this.name = name;
+        //     this.leves = leves;
+        //  }
+
+        //     login(){
+        //         console.log(' Employee is logged in');
+        //     }
+
+        //     logout (){
+        //         console.log('Employee is logged out');
+        //     }
+
+        //     requestLeave(leves){
+        //         console.log(`Employee  has requestd ${this.leves } leves`);
+        //     }
+        // }
+
+        // class Programmer extends Employee {
+        //     python(name){
+        //       console.log(`${this.name} is a python programmer`);
+        //     }
+        // }
+
+        // let firstPro = new Programmer('bruno',6);
+        // firstPro.python();
+        // firstPro.login()
+        // firstPro.requestLeave();
+
+
+        // super keyword use in constructor 
+        // class Animal {
+        //     constructor(name, color) {
+        //         this.name = name;
+        //         this.color = color;
+        //     }
+        // }
+
+        // class Dog extends Animal {
+        //     constructor(name, color, breed) {
+        //         super(name, color);
+        //         this.breed = breed;
+        //     }
+        // }
+
+        // let MyDog = new Dog('buddy', 'Golden', 'jurman');
+        // console.log(MyDog);
+
+
+        // class person {
+        //     introduce(name) {
+        //         console.log(`hello my name is ${name}`)
+        //     }
+        // }
+
+        // class Student extends person {
+        //     introduce(name, grade) {
+        //         super.introduce(name);
+        //         console.log(`i am in grade ${grade}`);
+        //     }
+        // }
+
+        // let fisrtPerson = new person();
+        // fisrtPerson.introduce('aman');
+
+        // let firstStudent = new Student();
+        // firstStudent.introduce('lokesh', 'A');
+
+
+    </script>
+
+</body>
+
+</html>

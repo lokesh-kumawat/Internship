@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2> Java script </h2>
+    <button id="theme" onclick="myFunction()">Switch mode</button>
+    <p>asynchornous concept </p>
+    <div id="output"> </div>
+
+    <button onclick="stopTime()"> stop time</button>
+    <button onclick="restartTime()">restart</button>
+
+
+    <script>
+
+        // console.log('hello world');
+        // theme switch concept
+        function myFunction() {
+            let select = document.body;
+            select.classList.toggle('dark');
+        }
+
+        // Callback
+        // function doSomething(Callback) {
+        //     setTimeout(() => {
+        //         Callback()
+        //         console.log('Operation completed');
+        //     }, 1000);
+        // }
+
+        // doSomething(console.log('operation started'));
+        // console.log('hiii')
+
+
+        // Promise
+        // const myPromise = new Promise((resolve, reject) =>{
+        //     setTimeout(() => {
+        //       resolve('operation succeeded');
+        //     },2000)
+
+        // })
+
+        // console.log(typeof(myPromise));
+        // myPromise
+        // .then(result => console.log(result))
+        // .catch(error => console.error(error));
+
+        // async function fetchData() {
+        //     try {
+        //         await new Promise((resolve, reject) => {
+        //             setTimeout(() => {
+        //                 console.log('data fetched')
+        //             }, 2000)
+        //         });
+        //     } catch (error) {
+        //         console.log(error);
+        //     }
+        // }
+
+        // fetchData();
+
+        // Callback
+        // let output = document.getElementById('output')
+        // function multiply(a){
+        //     let m = a * 4;
+        //     output.innerHTML = m
+        // }
+
+        // function sum (a,b, Callback){
+        //     let c = a + b;
+        //     Callback(c)
+        // }
+        // sum(3,3, multiply)
+
+        // multiply(2)
+
+        // setInterval
+
+        // let result = setInterval(myTimer)
+        // function myTimer(){
+        //     const d = new Date().toLocaleTimeString();
+        //     output.innerHTML = d;
+        // }
+        // myTimer()
+
+        // function stopTime() {
+        //     clearInterval(result);
+        //     result = null;
+        // }
+
+        // function restartTime(){
+        //     if(!result){
+        //         result =setInterval(myTimer, 1000);
+        //     }
+
+        // }
+
+
+        // let num = 10;
+        // const promise = new Promise((resolve, rejected) =>{
+        //     setTimeout(() =>{
+        //         if(num == 10){
+        //         resolve('The value is equal to given value');
+        //     } else{
+        //         rejected('The value is not eqaual to given value')
+        //     }
+        //     },2000)
+
+        // });
+
+        // console.log(promise);
+
+        // let num = 11;
+        // const promise = new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         if (num == 10) {
+        //             resolve('promise is resolved successfully');
+        //         } else {
+        //             reject('promise is rejected');
+        //         }
+        //     }, 1000);
+        // });
+
+        // promise
+        //     .then((message) => {
+        //         console.log('inside the then method');
+        //     })
+        //     .catch((message) => {
+        //         console.log('insid the catch method');
+        //     })
+
+        // console.log(promise);
+
+        // function getdata(dataId) {
+        //    setTimeout(() => {
+        //     console.log('data', dataId);
+        //    }, 2000);
+        // }
+
+        // getdata(123);
+
+
+        // Promise
+        // let promise = new Promise((resolve, reject) => {
+        //     console.log('i am a primise');
+        //      resolve("promise is resolved");
+        //     // reject('promise is rejected');
+        // })
+        // console.log(promise);
+
+        // promise
+        // .then((res) =>{
+        //     console.log('resolved', res)
+        // })
+        // .catch((err) =>{
+        //     console.log('rejected', err)
+        // })
+
+        // function getData(data){
+        //     return new Promise ((resolve, reject) =>{
+        //        setTimeout(() => {
+        //         resolve('this is resolve');
+        //        }, 3000);
+        //     })
+        // }
+
+        // console.log(getData())
+
+        // function asynfn1() {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             console.log('some data1');
+        //             resolve('success...');
+        //         }, 2000);
+        //     })
+        // }
+
+
+        // function asynfn2() {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             console.log('some data2');
+        //             resolve('success...');
+        //         }, 2000);
+        //     })
+        // }
+
+
+        // console.log('fetching data1...')
+        // asynfn1().then((res) => {
+        //     console.log('fetching data2..');
+        //     asynfn2().then((res) => {
+
+        //     })
+        // })
+
+
+        // console.log(asynfn())
+
+        // async function hello() {
+        //     return new Promise((rsolve, reject) => {
+        //         setTimeout(() => {
+        //             console.log('weather data');
+        //             resolve(200);
+        //         }, 2000);
+        //     })
+        // }
+
+        // try {
+        //     await resolve
+        // } catch (error) {
+        //     console.log('some error');
+        // }
+        // async function getdata() {
+        //     await  hello()
+        // }
+
+        // getdata()
+
+      
+
+
+
+    </script>
+
+</body>
+
+</html>
