@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Java Script </title>
+</head>
+
+<body>
+
+    <h2> Java script </h2>
+
+    <script>
+
+
+
+        //   oops concept
+        // const user = {
+        //     name: 'lokesh kumawat',
+        //     class: 12,
+        //     age: 21,
+
+        //     getBirthYear: function(){
+        //       return new Date().getFullYear() - user.age;
+        //     }
+        // };
+
+        // console.log(user.getBirthYear());
+
+        // function getBirthYear(age) {
+        //     console.log( new Date().getFullYear() - user.age)
+        // }
+        // getBirthYear();
+
+        // console.log(this)
+
+
+        // prototype
+        // function User(name, age) {
+        //     this.name = name;
+        //     this.age = age;
+        //     // console.log(this);
+        // }
+
+        // User.prototype.getBirthYear = function (){
+        //         return new Date().getFullYear()  - this.age;
+        // }
+
+
+        // const first = new User('lokesh', 20);
+        // const second = new User('ayan', 10);
+        // console.log(first);
+        // console.log(second);
+
+        // class Createuser {
+        //  constructor(firstname, lastname, age){
+        //    this.firstname = firstname;
+        //    this.lastname = lastname;
+        //    this.age = age;
+        //  }
+
+        //   getBirthYear(){
+        //     return new Date().getFullYear() - this.age;
+        //   }
+
+        //   getFullName(){
+        //     return  this.firstname + " " + this.lastname;
+        //   }
+
+        // }
+        // console.log(Createuser.prototype);
+
+
+        // const firstUser = new Createuser('lokesh', 'kumawat', 20);
+        // const  secondUser = new Createuser('naman', 'singh',56);
+        // console.log(firstUser);
+        // console.log(firstUser.getBirthYear())
+        // console.log(secondUser);
+        // console.log(secondUser.getFullName());
+        // console.log(secondUser.getBirthYear());
+        // console.log(secondUser.__proto__);
+        // console.log(firstUser.age)
+        // console.log(new Createuser);
+
+
+
+        // static keyword
+        // static property class ke uper aa jati hn par object ke uper nhi aati, hum object ke ander access nhi kar sak te
+
+        // class User {
+        //     constructor(name, age) {
+        //         this.name = name;
+        //         this.age = age;
+        //     }
+
+        //     static h1 = 'hii guyzz!';
+        // }
+
+        // const first = new User('anurag', 45,);
+        // const second = new User('anu', 25);
+
+        // console.log(first);
+
+
+        // getter and setter
+        // const user = {
+        //     firstname: 'anurag',
+        //     lastname: 'singh',
+        //     get fullname() {
+        //         return `${this.firstname}  ${this.lastname}`
+        //     },
+        //     set fullname(vlaue) {
+        //        return `${this.firstname}  ${this.lastname}`
+        //     }
+        // }
+
+
+
+        // console.luog(user)
+        // console.log(user.fullname());
+
+        // let arr = [23, 34, 655, 7];
+        // let max = Math.max(...arr);
+        // console.log(max);
+
+        // let minval = arr[0];
+        // let maxval = arr[0]
+
+        // arr.forEach((num) =>{
+        //  console.log(num);
+        //     if(num < minval) minval = num;
+        //     if(num > maxval) maxval = num;
+        // })
+
+        // console.log(minval);
+        // console.log(maxval);
+
+        // const user = {
+        //     firstname: 'anurag',
+        //     lastname: 'singh',
+        //     language: 'en',
+
+        //     get lang() {
+        //         return this.language.toUpperCase()
+        //     },
+
+        //     set langu(lang){
+        //    this.language = lang;
+        //     }
+
+        // }
+        // user.langu = 'HI';
+        // console.log(user);
+
+        const user = {
+            firstname: 'anurag',
+            lastname: 'singh',
+
+            get fullname() {
+                return this.firstname + " " + this.lastname;
+            },
+
+            set fullname(name) {
+                let ff = name.split(' ');
+                // console.log(ff);
+                this.firstname = ff[0];
+                this.lastname = ff[1];
+            },
+        };
+
+        // console.log(user.fullname);
+        user.fullname = 'jane smith';
+        console.log(user.firstname);
+        console.log(user.lastname);
+        console.log(user.fullname);
+
+        // console.log(user);
+
+
+
+        // let text = 'how are you';
+        // let arr = text.split(' ');
+        // let arr2 = Array.from(text);
+        // console.log(arr2);
+        // console.log(arr);
+        // let str = arr.join();
+        // console.log(str)
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

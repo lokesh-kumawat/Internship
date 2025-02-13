@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>HELLO WORLD!</h2>
+
+    <button onclick="getdata()">Get Data </button>
+    <div class="demo"> </div>
+    <script>
+
+        // async function
+        // async function solvePromise() {
+        //   const promise = new Promise((resolve, reject) =>{
+        //     // resolve('this is success');
+        //     reject('this is rejected');
+        //   })
+        //   const result = await promise;
+        //   console.log(result);
+        // }
+
+        // solvePromise();
+
+        // wating for time
+        // async function solvePromise(data) {
+        //     console.log('work on progress.....');
+        //     const promise = new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             resolve('success');
+        //             // reject('rejectd');
+        //         }, 2000);
+        //     })
+        //     const res = await promise;
+        //     console.log(res);
+        // }
+
+        // solvePromise()
+
+
+
+        //   Error Handling usign try and catch
+
+        // async function solvePromise() {
+        //     const promise = new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             // resolve('This is resolve');
+        //             reject('This is reject');
+        //         },2000)
+        //     })
+
+        //     try {
+        //         const res = await promise
+        //         console.log('Inside the try Block');
+        //         console.log(res)
+        //     } catch (error) {
+        //         console.log('Inside the catch block')
+        //         console.log(error);
+        //     }
+        // }
+
+        // solvePromise()
+
+
+        // let output = document.getElementsByClassName('demo');
+        // console.log(output);
+        // async function getdata() {
+        //     try {
+        //         let result = await fetch('https://api.github.com/users');
+
+        //         let data = await result.json();
+
+        //         output.innerHTML += "login: " + data[0].login + "<br>";
+        //         output.innerHTML += "id: " + data[0].id + "<br>";
+        //         output.innerHTML += "node_id: " + data[0].node_id;
+
+        //     } catch (err) {
+        //         output.innerHTML += 'the error is occure' + json.stringify(err)
+        //     }
+        // }
+
+
+        // promise
+        // const num = 10;
+        // const promise1 = new Promise((resolve, reject) => {
+        //     if (num === 10) {
+        //         setTimeout(() => {
+        //             resolve('the value is equal to given number');
+        //         }, 2000)
+        //     } else {
+        //         reject('the value is not equal to the given number');
+        //     }
+        // })
+
+        // promise1
+        //     .then((res) => {
+        //         console.log(res);
+        //     })
+        //     .catch((err) => {
+        //         console.log(err);
+        //     })
+        //     .finally(() => {
+        //         console.log('everything work properly');
+        //     })
+
+        // let promise = new Promise((resolve, reject) => {
+        //     resolve(1);
+        //     setTimeout(() => {
+        //         resolve(2);
+        //     }, 2000);
+        // })
+
+        // promise.then((res) => {
+        //     alert(res)
+        // })
+
+
+        // let promise = new Promise((resolve, reject) =>{
+        //     setTimeout(() =>{
+        //         resolve(1)
+        //     },2000)
+        // })
+
+        // // console.log('fetching first data.....')
+        // promise
+        // .then((res) =>{
+        //     console.log(res);
+        //     return res;
+        // }).then((res) =>{
+        //     console.log(res);
+        // })
+
+
+        // promise chainning
+        // function getpromise1() {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             console.log('data 1')
+        //             resolve("success1");
+        //             // reject("some error")
+        //         }, 2000)
+        //     })
+        // }
+
+        // function getpromise2() {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             console.log('data 2')
+        //             resolve("success2");
+        //             // reject("some error")
+        //         }, 2000)
+        //     })
+        // }
+
+
+
+        // console.log('fetching data1..........')
+        // getpromise1()
+        //     .then((res) => {
+        //         console.log('fetching data2 .....');
+        //         getpromise2().then(() => {});
+        //     });
+
+
+        // this don't work
+        // console.log('fetching data2.......');
+        // let promise2 = getpromise2();
+        // promise2.then((res) => {
+        // })
+
+        // promis chaning
+        // function getdata1(dataId) {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             console.log('data', dataId);
+        //             resolve('success')
+        //         }, 3000)
+        //     })
+        // }
+
+        // function getdata2(dataId) {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             console.log('data', dataId);
+        //             resolve('success')
+        //         }, 3000)
+        //     })
+        // }
+
+
+        // function getdata3(dataId) {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             console.log('data', dataId);
+        //             resolve('success')
+        //         }, 3000)
+        //     })
+        // }
+
+        // console.log('fetching data1....... ')
+        // getdata1(23)
+        //     .then(() => {
+        //         console.log('fetching data2.....');
+        //         return getdata2(2222)
+        //     }).then(() => {
+        //         console.log('fetching data3....')
+        //         return getdata3(5234)
+        //     })
+
+
+
+        // async function
+        //     async function getdata(){
+        //     console.log('hello');
+        //     }
+
+        //    console.log(getdata());
+
+
+        // function api() {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             console.log('weather data');
+        //             resolve(200);
+        //         }, 2000);
+        //     })
+        // }
+
+
+        // async function getWeather() {
+        //     await api();
+        //     await api();
+        // }
+
+        // getWeather()
+
+
+        // function getdata(dataId) {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             console.log('data', dataId);
+        //             resolve('success')
+        //         }, 2000)
+        //     })
+        // }
+
+        // async function getAllData(params) {
+        //     console.log('fetching data1....');
+        //     await getdata(234);
+        //     console.log('fetching data2......');
+        //     await getdata(9000);
+        //     console.log('fetching data3.......');
+        //     await getdata(8000);
+        // }
+
+        // getAllData();
+
+        // custom error
+        //  try {
+        //     // harry
+        //    throw new Error("harry is not a good person");
+        //  }catch(err){
+        //     console.log(err.message);
+        //     console.log(err.name);
+        //  }
+ 
+        
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

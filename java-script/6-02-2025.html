@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Java Script </title>
+</head>
+
+<body>
+
+    <h2> Java script </h2>
+
+    <script>
+
+        console.log('Hello World');
+
+
+        // class
+        // class User {
+
+        //    constructor(name){
+        //     this.name = name;
+        //    }
+
+        // }
+
+        // const person = new User('lokesh');
+        // console.log(person);
+        // console.log(typeof(User));
+
+
+        // prototype
+        // function Person(first ,last, age){
+        //     this.first = first;
+        //     this.last = last;
+        //     this.age = age;
+        // }
+
+        // Person.prototype.fullName = function(){
+        //     return this.first + " " + this.last;
+        // }
+        // const firstPerson = new Person('lokesh', 'kumawat', 45);
+        // console.log(firstPerson);
+        // console.log(firstPerson.fullName());
+
+        // Person.prototype.city = 'jaipur';
+        // const newPerson = new Person('lokesh', 10);
+        // console.log(newPerson);
+        // console.log(newPerson.city);
+
+
+
+        // function person(name , age,){
+        //    return this.name , this.age
+        // }
+
+        // let obj ={
+        //     name : 'lokesh',
+        //     age : 34
+        // };
+        // let firstPerson = person.call(obj,{city : "jaipur"});
+        // console.log(firstPerson.city)
+
+
+        // class Car {
+        //     constructor(brand, model, year,price) {
+        //         this.brand = brand;
+        //         this.model = model;
+        //         this.year = year;
+        //         this.price = price;
+        //     }
+
+        //     updatePrice(newPrice){
+        //         this.price = newPrice
+        //     }
+        // }
+
+        // const myCar = new Car('BMW', 'X5', 2024, 209000);
+        // console.log(myCar);
+
+        // myCar.updatePrice(500400);
+        // console.log(myCar);
+
+        // const firstCar = new Car('BMW', 'X5', 2020);
+        // console.log(firstCar);
+
+
+        // object
+        // const user = {
+        //     totalBrand: 50,
+        //     audi: {
+        //         modal: 'Q7',
+        //         price: 2079583,
+        //     },
+        //     Bmw: {
+        //         modal: 'S20D',
+        //         price: 978041
+        //     }
+        // };
+
+        // user.audi.year = 2025;
+        // console.log(user.audi);
+        // console.log(user);
+        // delete user.totalBrand;
+        // console.log(user)
+
+        // console.log(user.audi.modal);
+
+        // console.log(Array.prototype);
+        // console.log(String.prototype);
+        // console.log(Object.prototype)
+
+        // sort
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        // console.log(fruits.sort());
+        // console.log(fruits.reverse())
+
+        // const points = [40, 100, 5, 25, 10];
+        // console.log(points.sort())
+        // console.log( points.sort(function(a,b){return b-a}))
+        // console.log(points.reverse())
+
+        // let high = Math.max(...points);
+        // console.log(high);
+        // let lowest = Math.min(...points);
+        // console.log(lowest);
+
+        // let pp = points.sort((a, b) => a - b)
+        // console.log(pp);
+
+        // let lowest = points[0];
+        // let high = points[points.length - 1];
+
+        // console.log(lowest);
+        // console.log(high);
+
+
+        class Animal {
+            constructor(name) {
+                this.speed = 0;
+                this.name = name;
+
+            }
+
+            run(speed) {
+                this.speed = speed;
+                alert(`${this.name} run with ${this.speed} speed`);
+            }
+
+            stop() {
+                this.speed = 0;
+                alert(`${this.name} stand still`)
+            }
+        }
+
+        // let animal = new Animal('Hourse');
+        // console.log(animal.run(4));
+        // console.log(animal.stop());
+
+        class Rabbit extends Animal {
+            hide(){
+                alert(`${this.name} hides`);
+            }
+        }
+
+        let rabbit = new Rabbit('white rabbit');
+        console.log(rabbit.hide());
+        console.log(rabbit.stop());
+        console.log( rabbit.run(10));
+        
+
+    </script>
+
+</body>
+
+</html>
