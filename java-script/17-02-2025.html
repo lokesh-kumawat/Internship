@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2> Hello java Script </h2>
+
+    <!-- <ul class="unorderList">
+        <li class="list">one</li>
+        <li class="list">two</li>
+        <li class="list">three</li>
+    </ul> -->
+
+    <!-- <div id="container">
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <span>Lorem ipsum dolor sit amet.</span>
+    </div> -->
+
+    <!-- <button onclick="countchild()">give child nodes</button>
+    <p class="output"> </p> -->
+
+    <!-- <button onclick="modifyuChildElement()"> modify element</button> -->
+
+    <!-- <button onclick="addTextNode('YES!')"> Yes! </button>
+    <button onclick="addTextNode('NO!')"> No! </button>
+    <button onclick="addTextNode('WE CAN!')"> We Can! </button>
+
+    <p id="p1"> this element is </p> -->
+
+    <ul class="language">
+        <li>java script</li>
+        <li>flutter</li>
+    </ul>
+
+    <h3>Add More langName</h3>
+    <!-- <button onclick="addLanguage('typeScript')">TypeScript</button><br>
+    <button onclick="addLanguage('C++')">C++</button><br>
+    <button onclick="addLanguage('Python')">Python</button> -->
+
+    <!-- <button onclick="changeHtml()">changeHtml</button> -->
+
+
+    <!-- <div style=" width: 100px; height: 100px; background-color:red;" class="box">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <input type="radio" name="color" id="yellow"> yellow
+    <input type="radio" name="color" id="green"> green
+    <input type="radio" name="color" id="blue"> Blue
+    -->
+
+    <!-- <form onsubmit="sumbmitForm(event)" action="" id="nameform">
+        <label for="first Name: "></label>
+        <input type="text" name="firstname">
+
+        <label for="last Name: "></label>
+        <input type="text" name="lastname">
+
+        <input type="submit" value="submit">
+    </form>
+
+    <p id="output"> </p> -->
+
+    
+    <script>
+
+
+
+        // function sumbmitForm (e) {
+        //     e.preventDefault();
+        //     const output = document.querySelector('#output');
+        //     const firstname = document.forms['nameform']['firstname'].value
+        //     const lastname = document.forms['nameform']['lastname'].value;
+        //     output.innerHTML= `firstname: ${firstname} lastname: ${lastname}`
+        // }
+
+
+        // let data = document.getElementsByClassName('.language');
+        // console.log(data);
+
+        // let box = document.querySelector('.box');
+        // function colorchange() {
+        //     let change = document.getElementsByName('color');
+        //     console.log(change)
+        //     change.forEach((inp) => {
+        // console.log(inp)
+        // inp.addEventListener('change', () => {
+        // box.style.backgroundColor = this.id;
+        // box.style.backgroundColor = this.id;
+        // console.log(inp)
+        //         })
+        //     });
+        // }
+
+        // colorchange()
+
+
+        // function changeHtml(){
+        //     const text = document.querySelector('.language').children[1];
+        // const selectChild = text.children[1];
+        //     const newEle = document.createElement('p').innerHTML = 'replace list item';
+        //     text.replaceWith(newEle);
+
+        // }
+
+
+        // remove Element 
+        // const li = document.querySelector('li');
+        // li.remove()
+
+
+        // Edit Element 
+        //  const select  = document.querySelector('.language')
+        // console.log( select.children[1].innerHTML = 'mojo');
+
+        // second way to edit 
+        // setTimeout(() =>{
+        // const select = document.querySelector('.language');
+        // console.log(select.children[1].outerHTML = '<li> mogoDB </li>')
+        // },3000)
+        // const select = document.querySelector('.language');
+        // console.log(select.children[2].outerHTML = '<li> mogoDB </li>')
+        // let li1 = select.children[1];
+        // li1.outerHTML = "<li> mogoDB </li>"
+
+
+        // best way to add new list 
+        // function addLanguage(langName) {
+        //     const li = document.createElement('li');
+        //     const liText = document.createTextNode(langName)
+        //     li.appendChild(liText)
+        //     document.querySelector('.language').appendChild(li);
+        // }
+
+        // add new list
+        // function addLanguage(langName) {
+        //     const li = document.createElement('li');
+        //     li.innerHTML = `${langName}`
+        //     document.querySelector('.language').appendChild(li)
+        // }
+
+        // addLanguage('typeScript')
+
+
+        // const newEle = document.createElement('div');
+        // newEle.setAttribute('id', 'container');
+        // newEle.innerHTML = 'ajsdkl';
+        // console.log(newEle)
+        // const text = document.createTextNode("newly create div");
+        // newEle.appendChild(text);
+        // document.body.appendChild(text);
+
+
+        //    function addTextNode (text){
+        //     const newText  = document.createTextNode(text);
+        //     const para = document.getElementById('p1')
+        //     para.appendChild(newText);
+        //    }
+
+
+        // console.log('hello world');
+        // function modifyuChildElement() {
+        //     const parentEle = document.querySelector('#container');
+        //  console.log(parentEle);
+        // let first = parentEle.childNodes[1];
+        // let first = parentEle.firstElementChild
+        // console.log(first)
+        //     parentEle.removeChild(first);
+        //     const newEle = document.createElement('h2');
+        //     newEle.innerHTML = 'New heading';
+        //     parentEle.appendChild(newEle);
+        // }
+
+
+        // let collect = document.querySelector('#container');
+        // console.log(collect);
+
+        // function countchild () {
+        //     let collect = document.querySelector('#container');
+        //     let ss = collect.childNodes;
+        //     console.log(ss);
+        //     document.querySelector('.output').innerHTML = ss
+        // }
+
+        //  let dataList = document.querySelector('.unorderList');
+        //  console.log(dataList);
+        //  let listElement = dataList.children;
+        //  console.log(listElement);
+
+        // let ss = dataList.childNodes;
+        // console.log(ss)
+
+    </script>
+
+</body>
+
+</html>

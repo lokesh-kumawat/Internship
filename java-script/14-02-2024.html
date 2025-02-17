@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+
+        .container{
+            background-color: #f78ffd;
+            color: #f00860;
+            font-size: 24px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <h2> java script </h2>
+    <button onclick="themefn()">theme</button>
+
+    <h3 id="clr">Welcome to JS </h3>
+    <button onclick="colorChange()">change color</button>
+
+    <button onclick="createAndSetAttribute()">Create new element </button>
+
+    <h2 id="header">Lorem ipsum dolor sit.</h2> -->
+
+    <!-- <a class="anchorTag" href=https//www.google.com">google</a> -->
+<!--     
+    <div id="container">
+        <p>Lorem, ipsum dolor. <bold" style="display: none;">heyy</bold> </p>
+    </div> -->
+
+      <!-- <ul>
+          <li class="list-item">one</li>
+          <li class="list-item">two</li>
+          <li class="list-item">three</li>
+      </ul> -->
+
+        <tr>
+            <th>name</th>
+            <th>age</th>
+        </tr>
+      <tr>
+        <td>sonu</td>
+        <td></td>
+      </tr>
+
+    <script>
+          
+
+        //   html HTMLAllCollection
+        // let listdata = document.getElementsByClassName('list-item');
+        // console.log(listdata);
+        // let convertedArr =  Array.from(listdata);
+        // convertedArr.forEach( (li) => {
+        //     li.style.color = 'blue';
+        // });
+
+
+        // NodeList
+        // let listdata = document.querySelectorAll('li');
+        // console.log(listdata);
+        // listdata[0].style.color = 'blue'
+        // listdata.forEach((l) =>{
+        //     l.style.color = 'red'
+        // })
+       
+
+        //    let listData = document.querySelector('ul');
+        //    let firstdata =  listData.querySelector('li');
+        //    firstdata.innerText = 'heyy guzz.....' 
+        //    firstdata.style = 'background-color: green  color: white; padding: 10px'   
+   
+
+
+    //  textcontent, innerhtml, innertext properts
+
+    //    let data1 = document.getElementById('container').innerText
+    //    console.log(data1);
+
+    //    let data2 = document.getElementById('container').textContent
+    //    console.log(data2);
+
+    //    let data3 = document.getElementById('container').innerHTML
+    //    console.log(data3)
+
+        // let title = document.getElementById('clr');
+        // let val  = title.innerHTML
+        // let val2 = title.textContent
+        // let val3 = title.innerText
+        // console.log(val);
+        // console.log(val2)
+        // console.log(val3)
+       
+
+        // function createAndSetAttribute(){
+        //     const nd = document.createElement('div');
+        //     nd.setAttribute('class', 'container');
+        //     nd.textContent = "Hey i am newly created div"
+        //     document.body.appendChild(nd);
+        // }
+        
+        // function colorChange(){
+        //   let ele = document.getElementById("clr");
+        //   ele.setAttribute('style', 'color:gray; font-size: 24px;')
+        // }   
+
+        // console.log('hello js');
+        function themefn() {
+            let select = document.body;
+            select.classList.toggle('dark-mode');
+        }
+
+        // const root = document.createElement("html");
+        // root.lang = "en";
+        // console.log(root)
+
+        // const head = document.createElement("head");
+        // console.log(head);
+
+        // const title = document.createElement("title")
+        // title.appendChild(document.createTextNode("My Document"));
+        // head.appendChild(title);
+        // console.log(title);
+
+        // const body = document.createElement("body");
+        // console.log(body);
+
+        // const header = document.createElement("h1");
+        // header.appendChild(document.createTextNode("Header"));
+        // console.log(header);
+
+        // const paragraph = document.createElement("p");
+        // paragraph.appendChild(document.createTextNode("Paragraph"));
+        // body.appendChild(header);
+        // body.appendChild(paragraph);
+        // console.log(paragraph);
+
+        // root.appendChild(head);
+        // root.appendChild(body);
+
+        //  let idSelector =  document.getElementById('header');
+        // let idSelector = document.getElementById('header').id
+        // let idSelector = document.getElementById('header').class
+        // let idSelector = document.getElementById('header').innerHTML
+        // let idSelector = document.getElementById('header').innerText
+        // let idSelector = document.getElementById('header').getAttribute('id')
+    //    let idSelector = document.getElementById('header');
+    //    console.log(idSelector);
+    //    let attValue = idSelector.getAttribute('id');
+    //    console.log(attValue);
+
+    //    let anchor = document.getElementsByTagName('a');
+    //    console.log(anchor);
+    //    let anchorValue = anchor.getAttribute('href')
+
+
+    // let idSelector = document.getElementById('header').setAttribute('id', 'head header');
+ 
+    // let sm = document.getElementById('head');
+    // console.log(sm);
+
+
+
+    let str1 = 'wlecome js'
+    let str2 = str1.replace('le', 'ss')
+     console.log(str2);
+     console.log(str1);
+
+     let findSome = str1.includes('wl');
+      console.log(findSome);
+
+      let subPart =  str1.substring(2,5);
+      console.log(subPart);
+
+      let str3 = str1.trim();
+   k
+
+
+    </script>
+
+</body>
+
+</html>

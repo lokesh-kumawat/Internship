@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: black; color: white;">
+
+
+    <h2>Hello World</h2>
+    <div id="output1">value of gloabal: </div>
+    <div id="output2">value of local: </div>
+    <div id="output3">value of car objecs: </div>
+    <button onclick="openWindow()">open new tab</button>
+
+
+    <!-- button for window object method -->
+    <button onclick="windowOpen()">open new window</button>
+    <button onclick="windowFocus()">Focus</button>
+    <button onclick="windowClose()">Close</button>
+
+
+    <script>
+
+        console.log('hello world');
+
+        // window.document.write("hey js....<br>");
+        // console.log(window)
+        // document.write('hello java');
+
+        var num = 200;
+        const car = {
+            name: 'BMW',
+            modal: 'G63'
+        }
+
+        function test() {
+            let num = 300;
+            document.getElementById('output1').innerHTML += window.num;
+            document.getElementById('output2').innerHTML += num;
+            document.getElementById('output3').innerHTML += car.name
+        }
+
+        test();
+        // document.getElementById('output1').innerHTML += num
+
+        // console.log(window.length);
+        // console.log(window.localStorage);
+        // console.log(window.location);
+        // console.log(window.outerHeight);
+        // console.log(window.outerWidth);
+        // console.log(window.screenLeft);
+        // console.log(window.blur())
+        // window.alert('hey... guyzzzz.....');
+        //    console.log( window.open('https://www.tutorialspoint.com/'));
+
+
+        // window method
+        //     function openWindow() {
+        //      window.open("https://www.tutorialspoint.com/");
+        //   }
+
+
+        function windowOpen() {
+            window.open('https://www.google.com', 'width=400', 'height = 400');
+        }
+
+        function windowClose() {
+            window.close();
+        }
+
+        function windowFocus() {
+            window.focus();
+        }
+
+
+        // Document Object
+        // console.log(window.document);
+        // console.log(window);
+
+
+        console.log(document);
+        console.log(document.baseURI)
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
