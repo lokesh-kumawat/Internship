@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>HELLO WORLD!</h2> 
+    <!-- <input type='button' onclick='sayHello()' value='say' />
+
+    <p id="text">Lorem ipsum dolor sit amet.</p>
+    <button ondblclick="changeColor()">double click!</button> -->
+    <!-- <input type="text" onkeydown="customizedInput()" name="" id="text">
+
+    <div id="container" style="font-size: 20px;" onmouseenter = "changeRed()" onmouseleave = "changeBlack()">
+        Hover over the text
+    </div>
+
+    <button id="myBtn">Click me</button> -->
+
+    <!-- <p id="para" style="font-size: 20px;" onmouseenter="mEvent()">Lorem ipsum dolor sit amet consectetur adipisicing.</p> -->
+
+
+    <!-- <p id="para" style="font-size: 20px;" onmouseenter="mEvent()">
+        Lorem ipsum dolor sit amet consectetur adipisicing.
+    </p> -->
+
+    <!-- <p id="para" style="font-size: 20px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing.
+    </p>
+
+    <div id="mouseMove" style="height: 100px; width: 200px; background-color: aqua; color: black; font-size: 20px;">
+       Lorem ipsum dolor sit.
+    </div>
+    <div id="output">
+
+    </div>
+    
+    <label for="country"> Select a country : </label>
+    <select name="" id="country" onchange="handelChange()">
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <option value="UK">UK</option>
+        <option value="INDIA">India</option>
+    </select>
+    <p id="text"> </p> -->
+
+    <!-- <form action="" onsubmit="formValidate()">
+        <label for="username"> Username: </label>
+        <input type="text" id="username" name="username" required> <br>
+        <label for="password"> password: </label>
+        <input type="password" id="password" name="password" required>
+         <br/>
+         <input type="submit" value="submit">
+    </form> -->
+
+    <!-- <form action="" id="myform">
+         <label for="name"> Search: </label>
+         <input type="text" id="username">
+         <br><br>
+         <button type="submit">submit</button>
+    </form> -->
+
+    <!-- <div id=" message" style="border: 1px solid #ddd; padding: 10px;"></div> -->
+     <!-- <p id="output"></p> -->
+
+     <form id="myForm">
+        <input type="text" name="username" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+
+        console.log('hello world');
+
+        window.addEventListener('load', function () {
+           alert('hello user');
+        })
+
+
+    //     document.getElementById("myForm").addEventListener("submit", function (event) {
+    //     event.preventDefault(); // Prevents page reload
+    //     alert("Form submission prevented!");
+    // });
+
+        // const inputfiled = document.getElementById('username');
+
+        // inputfiled.addEventListener('input', function () {
+            // console.log(inputfiled);
+        //     console.log(inputfiled.value)
+        // })
+
+        // inputfiled.addEventListener('change', () =>{
+        //     console.log(inputfiled.value)
+        // })
+
+
+    //    const mForm = document.getElementById('myform');
+    //    const username = document.getElementById('username');
+
+    //    username.addEventListener('change', () =>{
+    //     console.log(username.value);
+    //    })
+
+    //    mForm.addEventListener('submit', () =>{
+    //     alert(username.value);
+    //    })
+
+    //   let output = document.querySelector('output');
+
+    //   username.addEventListener('input', () =>{
+    //     console.log(username.value) += output
+
+    //   })
+
+        // let select = document.querySelector('#search');
+        // let output =document.querySelector('#output');
+        // select.addEventListener('focus', () =>{
+        //     output.innerHTML += 'input has focus';
+        // })
+
+        // let input = document.getElementById('text')
+
+        // input.addEventListener('input', () =>{
+        //     console.log(input.value);
+        // })
+
+        // let msg = document.getElementById('message');
+        // let text = document.getElementById('search').value;
+        // console.log(text);
+        
+        // function handleInput () {
+        //     let text = document.getElementById('search').value;
+        //     msg.innerHTML += text;
+        // }
+    
+        // text.addEventListener('input', function () {
+        //   msg.innerHTML = text;
+        // })
+
+
+        // onsubmit
+        // function formValidate (){
+        //     let username = document.getElementById('username').value;
+        //     let password = document.getElementById('password').value;
+            
+        //     if(username === "" || password === ""){
+        //         alert('Please fill in all fields');
+        //     }else{
+        //         alert(`Form is submitted username is: ${username}  password is: ${password}`);
+        //     }
+
+        // }
+
+
+        // form Event
+        // function handelChange (){
+        //   const dropValue =  document.querySelector('#country').value
+        //   console.log(dropValue)
+        //     document.getElementById('text').textContent = 'slected country : ' +  dropValue;
+        // }
+         
+
+
+        // KeyboardEvent
+        //    document.addEventListener('keydown', (e) =>{
+        //     document.getElementById('output').innerHTML = e.key;
+        //    })
+
+        // document.addEventListener('keypress', (e) =>{
+        //    document.querySelector('#output').textContent = e.key;
+        // })
+
+
+        // mouse Event
+        // let mMove = document.getElementById('mouseMove');
+        // console.log(mMove);
+        // let output = document.querySelector("#output");
+        // console.log(output)
+
+        // mMove.addEventListener('mousemove', function (e) {
+        //   const moveX = e.clientX;
+        //   const moveY = e.clientY;
+
+        //   output.innerHTML = `X value is ${moveX} and y value is ${moveY}`
+        // })
+
+
+        // let select  = document.querySelector('#para');
+        // select.addEventListener('mouseover', function(){
+        //     select.style.color = 'red'
+        // })
+
+        // const select = document.querySelector('#para');
+        // function mEvent(){
+        //   select.style.color = 'green'
+        // }
+
+        // const select = document.querySelector('#para');
+        // console.log(select)
+
+        // function mhandle () {
+        //     select.style.color = 'green'
+        // }
+    
+        // select.addEventListener('mouseover', (e) =>{
+        //     select.style.color = ' green'
+        //     console.log(e)
+        // })
+
+        // select.addEventListener('mouseout', function () {
+        //     select.style.color = 'black';
+        // })
+       
+
+
+    //     const btn = document.getElementById('myBtn');
+    //     function handleClick(){
+    //         alert('button clicked');
+    //     }
+        
+    //     btn.addEventListener('click', handleClick)
+
+    //     function changeRed(){
+    //         document.getElementById('container').style.color = 'red';
+    //     }
+
+    //     function changeBlack(){
+    //         document.getElementById('container').style.color = 'black';
+    //     }
+
+    //    function customizedInput(){
+    //       const ele = document.getElementsByTagName('input')[0];
+    //     // console.log(ele);
+    //       ele.style.backgroundColor = 'yellow';
+    //      ele.style.color = 'black';
+    //   }
+
+
+        // function sayHello(){
+        //     alert('heyy Event');
+        // }
+       
+        // function changeColor(){
+        //    document.getElementById("text").style.color = 'orange'
+        // }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
